@@ -65,7 +65,16 @@ namespace WindowsDevelopmentInstaller
                {
                  command = "dism.exe /online /enable-feature:NetFx3 /quiet /norestart",
                  Description = "Enable older dot net for succesful rake buils"
+
+               },
+               new InstallCommand()
+               {
+                   command = "choco install dropbox -y",
+                   Description = "installing dropbox"
                }
+
+
+
              };
         }
 

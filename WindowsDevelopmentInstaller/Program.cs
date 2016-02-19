@@ -71,8 +71,14 @@ namespace WindowsDevelopmentInstaller
                {
                    command = "choco install dropbox -y",
                    Description = "installing dropbox"
+               },
+               new InstallCommand()
+               {
+                   command = "choco install mobaxterm -y",
+                   Description = "installing mobaxterm"
                }
 
+			   
 
 
              };

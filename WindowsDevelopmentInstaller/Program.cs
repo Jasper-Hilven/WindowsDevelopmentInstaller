@@ -64,7 +64,7 @@ namespace WindowsDevelopmentInstaller
                new InstallCommand()
                {
                  command = "dism.exe /online /enable-feature:NetFx3 /quiet /norestart",
-                 Description = "Enable older dot net for succesful rake buils"
+                 Description = "Enable older dot net for succesful rake builds"
 
                },
                new InstallCommand()
@@ -76,7 +76,28 @@ namespace WindowsDevelopmentInstaller
                {
                    command = "choco install mobaxterm -y",
                    Description = "installing mobaxterm"
+               },
+			   new InstallCommand()
+               {
+                 command = "choco install -y ruby",
+                 Description = "install ruby"
+               },
+			   new InstallCommand()
+               {
+                 command = "choco install -y ant",
+                 Description = "install ant"
+               },
+			    new InstallCommand()
+               {
+                 command = "choco install -y gradle",
+                 Description = "install gradle"
+               }, new InstallCommand()
+               {
+                 command = "choco install -y maven",
+                 Description = "install maven"
                }
+
+
 
 			   
 
